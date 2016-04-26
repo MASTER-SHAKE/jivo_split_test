@@ -1,3 +1,8 @@
+/* Настройки - домен сайта для проставления куков и время хранения*/
+var domain = "hand-operation.ru;";
+var date = new Date(new Date().getTime() + 600 * 1000);
+
+/* ---------- Нужные нам функции в том числе вызов JIVO ----------- */
 function jivoSite() {
     var widget_id = 'u8xSO4uvmc';
     var d = document;
@@ -22,13 +27,6 @@ function jivoSite() {
         }
     }
 }
-
-/* Настройки - домен сайта для проставления куков и время хранения*/
-var domain = "hand-operation.ru;";
-var date = new Date(new Date().getTime() + 600 * 1000);
-
-/* Нужные нам функции*/
-/* ------------------------------------------------------ */
 function getCookie(Counter) {
     var matches = document.cookie.match(new RegExp(
         "(?:^|; )" + Counter.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -44,7 +42,8 @@ function getRandomInt(min, max) {
 function delCookie(name) {
     document.cookie = name + "=" + ";";
 }
-/* ------------------------------------------------------ */
+/* ------------- Нужные нам функции закончились ---------------*/
+
 
 var jscookie = getCookie("counter");
 jscookie = parseInt(jscookie);
@@ -69,7 +68,7 @@ if (jscookie != 2 && jscookie != 1) {
         ga('set', 'dimension2', 'withJivosite');
     }
 }
-/* Если кики на сайте есть, то делаем противоположное действие*/
+/* Если куки на сайте есть, то делаем действие в зависимости от старого значения куков */
 else {
     if (jscookie == 2) {
 
