@@ -1,15 +1,15 @@
-Настройки скрипта:
+Script setting:
 
 
-Домен:
+Domain:
 var domain = "hand-operation.ru;";
 ////////////////////////////////////////////////
 
-Какие данные отправлять в гугл аналитику
+What info we send to Google Analytics
 ga('set', 'dimension1', 'withoutJivosite');
 ga('set', 'dimension2', 'withoutJivosite');
 ////////////////////////////////////////////////
 
-Функция по которой вызываем окно jivo:
+function on jivo site call:
 jivoSite();
 ////////////////////////////////////////////////

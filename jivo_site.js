@@ -48,7 +48,7 @@ function delCookie(name) {
 
 var jscookie = getCookie("counter");
 jscookie = parseInt(jscookie);
-console.log("число в прошлой сессии"+jscookie);
+console.log("число в прошлой сессии - "+jscookie);
 /* Если куков нету у данного юзера - рандомим случайное число в куки*/
 if (jscookie != 2 && jscookie != 1) {
     /* Рандомное число от 1 до 2 */
